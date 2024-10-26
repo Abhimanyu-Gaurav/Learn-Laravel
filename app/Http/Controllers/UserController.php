@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\View;
 
 class UserController extends Controller
 {
@@ -12,9 +13,9 @@ class UserController extends Controller
         return view("user");
     } 
 
-    // function aboutUser(){
-    //     return "This is Abhimanyu Gaurav";
-    // }
+    function aboutUser(){
+        return "This is Abhimanyu Gaurav";
+    }
 
     function getUserName($name){
         // return "Hello!!" . $name;
@@ -22,9 +23,9 @@ class UserController extends Controller
 
     }
 
-    function adminLogin(){
-        return view("admin.login");
-    }
+    // function adminLogin(){
+    //     return view("admin.login");
+    // }
 
     function userHome(){
             return view("home");
@@ -34,4 +35,19 @@ class UserController extends Controller
         return view("about",["name"=>$name]);
     }
 
-}
+    # To check view exits or not:
+    function adminLogin(){
+        // if(view::exists('admin.login')){
+        //     return view('admin.login');
+        // }else{
+        //     echo "No view found";
+        // } 
+        if(view::exists('admin.signup')){
+            return view('admin.signup');
+        }else{
+            echo "No view found";
+        } 
+    
+    }
+
+} 
