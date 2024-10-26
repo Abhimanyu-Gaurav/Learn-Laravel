@@ -28,7 +28,9 @@ class UserController extends Controller
     // }
 
     function userHome(){
-            return view("home");
+            $name = "abhi";  # pass variables
+            $users = ['abhi', 'prashant', 'ravi']; # pass array
+            return view("home",["name"=>$name,"users"=>$users]);
     }
 
     function userAbout($name){
