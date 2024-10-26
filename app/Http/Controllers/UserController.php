@@ -7,4 +7,11 @@ use Illuminate\Http\Request;
 class UserController extends Controller
 {
     //
+    function getUser(){
+        return "Laravel code";
+    }
+
+    function aboutUser(){
+        return "This is Abhimanyu Gaurav";
+    }
 }
