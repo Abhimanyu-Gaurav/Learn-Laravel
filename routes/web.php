@@ -11,7 +11,7 @@ Route::get('/', function () {
 //     return view('Home');
 // });
 
-// Route::view('/home', 'Home');
+// Route::view('/home', 'home');
 
 // Route::redirect('/home', '/'); #Redirecting home page to welcome page
 
