@@ -12,9 +12,9 @@ class UserController extends Controller
         return view("user");
     } 
 
-    function aboutUser(){
-        return "This is Abhimanyu Gaurav";
-    }
+    // function aboutUser(){
+    //     return "This is Abhimanyu Gaurav";
+    // }
 
     function getUserName($name){
         // return "Hello!!" . $name;
@@ -25,4 +25,13 @@ class UserController extends Controller
     function adminLogin(){
         return view("admin.login");
     }
+
+    function userHome(){
+            return view("home");
+    }
+
+    function userAbout($name){
+        return view("about",["name"=>$name]);
+    }
+
 }

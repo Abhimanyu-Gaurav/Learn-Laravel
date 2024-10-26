@@ -24,3 +24,5 @@ Route::get('/user', [UserController::class, 'getUser']); #Route for getUser
 Route::get('about', [UserController::class,'aboutUser']); #Route for aboutUser
 Route::get('user/{name}', [UserController::class,'getUserName']);
 Route::get('admin', [UserController::class,'adminLogin']); #Route for admin
+Route::get('home', [UserController::class,'userHome']); #Route for home
+Route::get('user-about/{name}', [UserController::class,'userAbout']); #Route for about
