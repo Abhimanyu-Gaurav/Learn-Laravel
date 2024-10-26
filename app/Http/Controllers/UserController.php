@@ -8,8 +8,9 @@ class UserController extends Controller
 {
     //
     function getUser(){
-        return "Laravel code";
-    }
+        // return "Laravel code";
+        return view("user");
+    } 
 
     function aboutUser(){
         return "This is Abhimanyu Gaurav";
@@ -17,5 +18,6 @@ class UserController extends Controller
 
     function getUserName($name){
         return "Hello!!" . $name;
+
     }
 }
