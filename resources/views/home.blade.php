@@ -18,6 +18,13 @@
 
 {{-- ##loop --}}
 <div>
+    @foreach ($users as $user)
+    <h5>{{$user}}</h5>            {{--loop on users array--}}
+    @endforeach
+</div>
+
+
+<div>
     @for($i=0; $i<=10; $i++)
     <h3>{{$i}}</h3>
     @endfor
