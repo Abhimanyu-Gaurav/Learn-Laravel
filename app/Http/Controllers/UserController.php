@@ -17,7 +17,8 @@ class UserController extends Controller
     }
 
     function getUserName($name){
-        return "Hello!!" . $name;
+        // return "Hello!!" . $name;
+        return view("getUserName",["name"=>$name]);
 
     }
 }
