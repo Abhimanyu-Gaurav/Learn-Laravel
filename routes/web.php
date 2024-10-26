@@ -17,7 +17,7 @@ Route::get('/', function () {
 
 
 // Route::get('/about/{name}', function ($name) {
-//     return view('About', ['name'=> $name]);
+//     return view('about', ['name'=> $name]);
 // });   # Adding Dynamic name along with about path.
 
 Route::get('/user', [UserController::class, 'getUser']); #Route for getUser
