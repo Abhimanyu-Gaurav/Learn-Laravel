@@ -14,4 +14,8 @@ class UserController extends Controller
     function aboutUser(){
         return "This is Abhimanyu Gaurav";
     }
+
+    function getUserName(){
+        return "Hello!! Abhimanyu gaurav";
+    }
 }
