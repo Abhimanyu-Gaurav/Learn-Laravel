@@ -21,4 +21,8 @@ class UserController extends Controller
         return view("getUserName",["name"=>$name]);
 
     }
+
+    function adminLogin(){
+        return view("admin.login");
+    }
 }
