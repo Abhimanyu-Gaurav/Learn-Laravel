@@ -1,3 +1,6 @@
+@include('common.header')
+@include('common.inner',['page'=>"This is home page"]) {{--pass data from main view to subview--}}
+
 <h1>Home</h1>
 <a href="/">Home page</a>
 <a href="/about/Anil">About page</a>  
