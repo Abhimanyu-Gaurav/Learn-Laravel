@@ -1,5 +1,6 @@
 @include('common.header')
-@include('common.inner',['page'=>"This is home page"]) {{--pass data from main view to subview--}}
+{{-- @include('common.inner',['page'=>"This is home page"]) pass data from main view to subview --}}
+@includeif('common.common',['page'=>"This is home page"]) {{--To check subview wxist or not--}}
 
 <h1>Home</h1>
 <a href="/">Home page</a>
